@@ -20,7 +20,7 @@ ul { display: flex; justify-content: center; list-style: none; padding: 0; margi
 .anniversary-list { margin-top: 20px; margin-bottom: 20px; 
     font-size: 25px; font-weight: bold;color:rgb(15, 15, 15); margin: 0 ;text-align: center;}
 
-.container { width: 98%; max-width: 960px; margin-top: 24px; margin-bottom: 24px; margin-left: auto; margin-right: auto; padding: 24px; }
+.container { width: 96%; max-width: 940px; margin-top: 24px; margin-bottom: 24px; margin-left: auto; margin-right: auto; padding: 24px; }
 
 .hero { display: grid; grid-template-columns: 130px 1fr 130px; gap: 16px; align-items: center; margin-bottom: 18px; background-color: #ddeeff; padding: 10px; }
 .hero-logo { width: 120%; max-width: 140px; }
