@@ -73,5 +73,32 @@
     <div class="footer-note">FND47 01_Shinji_Tsunoda🌞</div>
 
   </div>
+  <script>
+    {
+      const colorBoxes = document.querySelectorAll(".card, .example-box");
+
+      const digitizationButtonForColor = document.getElementById("digitizationButton");
+      const digitalizationButtonForColor = document.getElementById("digitalizationButton");
+      const dxButtonForColor = document.getElementById("dxButton");
+
+      digitizationButtonForColor.addEventListener("click", function () {
+        for (const box of colorBoxes) {
+          box.style.backgroundColor = "#c9f2d0";
+        }
+      });
+
+      digitalizationButtonForColor.addEventListener("click", function () {
+        for (const box of colorBoxes) {
+          box.style.backgroundColor = "#cfe8ff";
+        }
+      });
+
+      dxButtonForColor.addEventListener("click", function () {
+        for (const box of colorBoxes) {
+          box.style.backgroundColor = "#fff0d6";
+        }
+      });
+    }
+  </script>
 </body>
 </html>

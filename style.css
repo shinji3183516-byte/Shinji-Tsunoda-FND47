@@ -20,17 +20,27 @@ ul { display: flex; justify-content: center; list-style: none; padding: 0; margi
 .anniversary-list { margin-top: 20px; margin-bottom: 20px; 
     font-size: 25px; font-weight: bold;color:rgb(15, 15, 15); margin: 0 ;text-align: center;}
 
-.container { width: 96%; max-width: 940px; margin-top: 24px; margin-bottom: 24px; margin-left: auto; margin-right: auto; padding: 24px; }
+.container { width: 96%; max-width: 940px;border-radius: 18px;overflow: hidden;
+  margin-top: 24px; margin-bottom: 24px; margin-left: auto; margin-right: auto; padding: 24px; }
 
-.hero { display: grid; grid-template-columns: 130px 1fr 130px; gap: 16px; align-items: center; margin-bottom: 18px; background-color: #ddeeff; padding: 10px; }
+.hero { display: grid; grid-template-columns: 130px 1fr 130px;border-radius: 18px;
+   gap: 16px; align-items: center; margin-bottom: 18px; background-color: #ddeeff; padding: 10px; }
 .hero-logo { width: 120%; max-width: 140px; }
 .hero-text { text-align: center;font-size:40;color: red; }
 
-h1 { text-align: center; color: #000; margin: 4px 0 8px; font-size: 45px; letter-spacing: 0.05em; text-decoration: underline; }
+h1 { text-align: center; color: #000;
+   margin: 4px 0 8px; font-size: 45px;
+  
+  font-family: "Segoe UI", Arial, sans-serif;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+   
+.subtitle { display: inline-block; padding: 15px ; background-color: #96f38a; color: #000; font-weight: bold; font-size: 18px;border-radius: 18px; }
 
-.subtitle { display: inline-block; padding: 15px ; background-color: #96f38a; color: #000; font-weight: bold; font-size: 18px; }
-
-.lead { color:black; font-size: 22px; line-height: 1.8; text-align: center; margin-bottom: 28px; }
+.lead { color:black; font-size: 22px; 
+  line-height: 1.8; text-align: center; margin-bottom: 28px;
+font-family: "Segoe UI", Arial, sans-serif; }
 
 .button-area {display: flex;gap: 12px;justify-content: center;
   flex-wrap: wrap; margin-top: 10px;margin-bottom: 24px;
@@ -44,22 +54,28 @@ h1 { text-align: center; color: #000; margin: 4px 0 8px; font-size: 45px; letter
   display: block;width: 100%;height: 160px;
   border-radius: 10px;
 }
-
+.image-button:active {
+  transform: scale(0.8);
+}
 .image-button:hover {
   opacity: 0.9;
 }
-.card { padding: 24px; background-color: rgb(246, 197, 231); margin-bottom: 20px; }
-.card h2 { margin-top: 0; color: black; }
+.card { padding: 24px; background-color: rgb(246, 197, 231); margin-bottom: 20px;border-radius: 18px; }
+.card h2 { margin-top: 0; color: black;body {
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+} }
 .card p { font-size: 18px; line-height: 1.8; margin-bottom: 0; color: #000; }
 
-.example-box { padding: 24px; background-color:rgb(246, 197, 231) ; margin-bottom: 20px; }
-.example-box h3 { margin-top: 0; color: black; }
+.example-box { padding: 24px; background-color:rgb(246, 197, 231) ; margin-bottom: 20px;border-radius: 18px; }
+.example-box h3 { margin-top: 0; color: black;font-family: Arial, sans-serif; }
 .example-box p { font-size: 18px; line-height: 1.8; margin-bottom: 0; color: #000;}
 
 .step-area { color:black ;font-size:22px; padding-left: 24px; line-height: 1.8; }
 
 .badge-section { padding: 18px; }
-.badge-section h3 { text-align: center; margin-top: 0; margin-bottom: 12px; color: black; }
+.badge-section h3 { text-align: center; margin-top: 0; margin-bottom: 12px; color: black;body {
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+} }
 .badge-area { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; align-items: center; }
 .badge-area img { width: 92px; height: auto; }
 
