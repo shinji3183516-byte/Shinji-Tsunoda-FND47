@@ -80,3 +80,65 @@ font-family: "Segoe UI", Arial, sans-serif; }
 .badge-area img { width: 92px; height: auto; }
 
 .footer-note { text-align: right; color: black; font-size: 20px; margin-top: 14px; font-style: italic; border-top: 1px solid #ddd; padding-top: 10px; }
+
+#slogan-button {
+  border: none;
+  cursor: pointer;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#slogan-button:hover {
+  opacity: 0.9;
+}
+
+#main-title {
+  transition: 0.3s;
+}
+
+.title-pop {
+  transform: scale(1.03);text-shadow:
+    3px 3px 0 #999,
+    6px 6px 12px rgba(0, 0, 0, 0.35);
+  animation: titlePop 1.2s ease;
+}
+
+@keyframes titlePop {
+  0% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.08);text-shadow:
+      4px 4px 0 #999,8px 8px 16px rgba(0, 0, 0, 0.45);
+  }
+
+  100% {
+    transform: scale(1.03);text-shadow:
+      3px 3px 0 #999,6px 6px 12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.image-button.button-glow img {
+  animation: buttonGlow 1.5s ease;
+}
+
+@keyframes buttonGlow {
+  0% {
+    transform: scale(1);box-shadow: none;filter: brightness(1);
+  }
+
+  50% {
+    transform: scale(1.05);box-shadow:
+      0 0 12px rgba(255, 255, 255, 0.95),
+      0 0 26px rgba(0, 180, 255, 0.85),
+      0 0 42px rgba(150, 243, 138, 0.8);
+    filter: brightness(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+    filter: brightness(1);
+  }
+}

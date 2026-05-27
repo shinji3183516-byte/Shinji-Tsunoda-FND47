@@ -25,3 +25,29 @@ dxButton.addEventListener("click", function() {
   description.textContent = "デジタル技術を使って、仕事のやり方や提供する価値そのものを変えることです。";
   example.textContent = "例：紙の管理をやめるだけでなく、データを見て問題を早く見つけ、改善につなげる。";
 });
+
+let sloganButton = document.getElementById("slogan-button");
+let mainTitle = document.getElementById("main-title");
+let imageButtons = [digitizationButton, digitalizationButton, dxButton];
+
+sloganButton.addEventListener("click", function() {
+  mainTitle.classList.remove("title-pop");
+
+  for (const button of imageButtons) {
+    button.classList.remove("button-glow");
+  }
+
+  setTimeout(function() {
+    mainTitle.classList.add("title-pop");
+
+    for (const button of imageButtons) {
+      button.classList.add("button-glow");
+    }
+  }, 10);
+
+  setTimeout(function() {
+    for (const button of imageButtons) {
+      button.classList.remove("button-glow");
+    }
+  }, 1600);
+});
